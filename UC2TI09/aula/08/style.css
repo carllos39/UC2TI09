@@ -1,0 +1,48 @@
+header{
+    background-color: #333;
+    color: white;
+    padding:5px 20px 5px 20px;
+    text-align: center;
+
+}
+
+nav ul{
+    padding: 0;
+    list-style:none;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin-right:15px ;
+
+}
+/* Estilo para o conteúdo principal */
+main{
+    margin: 15px;
+    background-color:#f4f4f4 ;
+    padding: 20px;
+
+}
+section{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius:  5px; ;
+}
+/* Estilo paara o conteúdo complementar (aside) */
+aside{
+    background-color: #e9ecef;
+    padding: 15px;
+    border-left: 5px solid #444;
+}
+/* Estilom para om rodapé */
+footer{
+    background-color: #333;
+    color: white;
+     text-align: center;
+     padding: 1px;
+     
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+}
