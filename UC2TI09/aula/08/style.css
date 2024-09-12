@@ -11,9 +11,14 @@ nav ul{
     list-style:none;
     text-align: center;
 }
-nav ul li{
+    a{
+        color: white;
+    }
+
+nav ul li {
     display: inline;
     margin-right:15px ;
+    color: white;
 
 }
 /* Estilo para o conteúdo principal */
