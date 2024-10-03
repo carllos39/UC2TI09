@@ -7,7 +7,9 @@ header {
     background-color: rgb(190, 190, 190);
  
 }
-
+.logo{
+    background-color: antiquewhite;
+}
 nav {
     background-color: rgb(220, 220, 220);
     display: flex;
