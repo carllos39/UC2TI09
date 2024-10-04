@@ -15,7 +15,32 @@
             display: grid;
             grid-template-columns:200px 1fr 200px ;
             grid-template-rows: 100px 1fr 100px;
+            gap: 10px;
             height: 100vh;
+
+        }
+        header {
+            grid-column: 1 / -1;
+            background: lightblue;
+        }
+
+        nav {
+            grid-column: 1 / 2;
+            background: lightgreen;
+        }
+
+        main {
+            grid-column:  2/3;
+            background: lightcoral;
+        }
+
+        aside {
+            grid-column: 3 / 4;
+            background: lightgoldenrodyellow;
+        }
+        footer {
+            grid-column: 1 / -1;
+            background-color: lightgray;
         }
     </style>
 </head>
