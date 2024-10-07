@@ -7,19 +7,57 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: 1fr 200px 100x 100x;
-            grid-template-rows: 100px 80px 80px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.8fr 1.5fr 0.5fr ;
+            grid-template-areas: 
+                "nav nav nav nav"
+                "sidebar    main main main"
+                "sidebar  section-1 section-2 section-2"
+                "sidebar footer footer footer"
+        }
+        .grid-container>* {
+            padding-top: 10px;
+        }
+  
+        nav {
+            grid-area: nav;
+            background: rgb(100, 100, 200);
+        }
+
+        main {
+            grid-area: main;
+            background: rgb(90, 90, 180);
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: rgb(80, 80, 160);
+        }
+
+        .section-1 {
+            grid-area: section-1;
+            background: rgb(70, 70, 140);
+        }
+
+        .section-2 {
+            grid-area: section-2;
+            background: rgb(60, 60, 120);
+        }
+
+        footer {
+            grid-area: footer;
+            background: rgb(50, 50, 100);
         }
     </style>
 </head>
 <body>
-  <div class="container">
-    <navbar>Navbar</navbar>
-    <main>Main</main>
-    <section>Section1</section>
-    <section>Section2</section>
-    <aside>Sidebar</aside>
-    <footer>Footer</footer> 
-  </div>  
+    <div class="grid-container">
+        <nav>Navbar</nav>
+        <main>Main</main>
+        <div class="sidebar">Sidebar</div>
+        <section class="section-1">Section 1</section>
+        <section class="section-2">Section 2</section>
+        <footer>Footer</footer>
+    </div> 
 </body>
 </html>
