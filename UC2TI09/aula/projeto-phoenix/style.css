@@ -74,10 +74,12 @@ section:nth-child(even){
 .big-card {
     border: 1px solid;
     padding: 10px;
+
 }
 
-.big-card p {
+.big-card p,h4 {
     font-size: .5em;
+    margin: 0 0 5px;
 }
 .information {
     display: flex;
@@ -95,4 +97,11 @@ table {
         display: flex;
         flex-direction: column;
     }
+
+}
+@media (max-width: 500px) {
+    .split-width {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
 }
